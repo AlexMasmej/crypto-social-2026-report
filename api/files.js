@@ -1,9 +1,11 @@
 const fs = require("fs");
 const path = require("path");
 
+// In Vercel serverless functions the working directory varies; resolve from __dirname.
+const ROOT = path.resolve(__dirname, "..");
+
 function listMd(subdir) {
-	const root = process.cwd();
-	const dir = subdir ? path.join(root, subdir) : root;
+	const dir = subdir ? path.join(ROOT, subdir) : ROOT;
 	if (!fs.existsSync(dir)) return [];
 	const stat = fs.statSync(dir);
 	if (!stat.isDirectory()) return [];

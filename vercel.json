@@ -2,6 +2,11 @@
   "rewrites": [
     { "source": "/", "destination": "/site/index.html" }
   ],
+  "functions": {
+    "api/files.js": {
+      "includeFiles": "{raw,wiki}/**"
+    }
+  },
   "headers": [
     {
       "source": "/(raw|wiki)/(.*).md",
