@@ -42,7 +42,7 @@ Most apps pay the launcher/creator in some form — the rows below capture the _
 
 | Who earns | Examples |
 |---|---|
-| Creator launches and earns | [[pump.fun]], [[Believe (believe.app)]], [[Rodeo]], [[mint.fun]], [[$ALEX token]], [[friend.tech]], [[Drakula (drakula.app)]], [[Giggles]], [[Frenzy (frenzy.fun)]] |
+| Creator launches and earns | [[pump.fun]], [[Believe (believe.app)]], [[Rodeo]], [[mint.fun]], [[$ALEX token]], [[friend.tech]], [[Drakula (drakula.app)]], [[Giggles]], [[Frenzy (frenzy.fun)]], [[Zora]] (content + creator coins both pay the launching creator) |
 | Referrer earns | [[Rodeo]] (25% cut on feed-driven mints — the feed _is_ the referral), [[mint.fun]] (indirectly, via the **Boost** ecosystem — creators pay to get ranked higher) |
 | Creator earns without consent, must claim | [[BitClout]] (2021 — pre-populated creator coins for the top 15k Twitter accounts; the person had to claim to collect), [[Bags (bags.fm)]] (2026 — fees attributed to the tagged X handle; the beg-to-claim loop is what actually works, not the originally-promised top-100-holder dividends) |
 | Consumers earn | [[10K.world]] (watch-to-earn), [[CTA.fun]] (reply-to-earn — pre-mined $CTA on Solana; most-liked reply wins) |
