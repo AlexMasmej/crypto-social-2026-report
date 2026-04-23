@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Crypto Social Wiki</title>
+<link rel="stylesheet" href="styles.css" />
+<script src="https://cdn.jsdelivr.net/npm/marked@11/marked.min.js"></script>
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <header class="sidebar-head">
+      <h1>Crypto Social</h1>
+      <p class="meta">Wiki · 27 sources</p>
+    </header>
+
+    <nav class="nav">
+      <a class="feature" href="#wiki/idea-maze">
+        <span class="feature-label">★ Claude's thoughts on the idea maze</span>
+        <span class="feature-sub">synthesis, six axes, timeline, lessons</span>
+      </a>
+    </nav>
+
+    <div class="search-box">
+      <input id="search" type="search" placeholder="filter files…" />
+    </div>
+
+    <nav id="file-list" class="file-list"></nav>
+
+    <footer class="sidebar-foot">
+      <a class="foot-link" href="#README">README</a>
+      <a class="foot-link" href="#AGENTS">AGENTS.md</a>
+    </footer>
+  </aside>
+
+  <main id="main" class="main">
+    <div id="content" class="content">Loading…</div>
+  </main>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
