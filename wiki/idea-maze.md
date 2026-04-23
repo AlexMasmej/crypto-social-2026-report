@@ -31,10 +31,10 @@ Apps often span multiple rows. [[Zora]] appears in three (trends / content / cre
 
 | Coupling | Examples |
 |---|---|
-| Decoupled (memes, no identity) | [[pump.fun]], [[rug.fun]], [[Zora]] trends, [[CTA.fun]] (pre-mined $CTA bounty rewards best-liked reply) |
-| Content-coupled (per post / artifact) | [[Zora]] content coins, [[Rodeo]] mints, [[Showtime (tryshowtime.com)]] |
-| Profile-coupled with creator consent (includes launcher-is-creator — the launch action _is_ consent) | [[friend.tech]], [[$ALEX token]], [[Drakula (drakula.app)]], [[Breakout v1]], [[Believe (believe.app)]], [[Zora]] creator coins |
-| Profile-coupled WITHOUT creator consent | [[BitClout]] (2021), [[Bags (bags.fm)]] (2026), [[2100]] (paper, 2019), [[Believe v2]] (sentiment markets on named individuals — Ben Pasternak, Nikita Bier, etc.) |
+| Memes | [[pump.fun]], [[rug.fun]], [[Zora]] trends, [[CTA.fun]] |
+| Content | [[Zora]] content coins, [[Rodeo]] mints, [[Showtime (tryshowtime.com)]] |
+| Creator (with consent) | [[friend.tech]], [[$ALEX token]], [[Drakula (drakula.app)]], [[Breakout v1]], [[Believe (believe.app)]], [[Zora]] creator coins, [[Scoop]] (Farcaster creator profiles) |
+| Creator (without consent) | [[BitClout]] (2021), [[Bags (bags.fm)]] (2026), [[2100]] (paper, 2019), [[Believe v2]] (sentiment markets on named individuals — Pasternak, Bier, etc.) |
 
 ### 2. Earning topology — who captures value?
 
@@ -42,19 +42,17 @@ Most apps pay the launcher/creator in some form — the rows below capture the _
 
 | Who earns | Examples |
 |---|---|
-| Launcher / creator primary | [[pump.fun]], [[Believe (believe.app)]], [[Rodeo]], [[mint.fun]], [[10K.world]], [[$ALEX token]], [[friend.tech]] |
-| Buyer-curators (referrals, influencer cuts) | [[Rodeo]] (25% cut on feed-driven mints — the feed is the referral, and feed items almost always carry a referrer), [[mint.fun]] (indirectly, via the **Boost** ecosystem — creators pay to get their NFTs minted and ranked higher in mint.fun's discovery, so curator-style value flows through paid placement rather than a direct referral cut) |
-| Non-launched creator fees (tokenized person must claim) | [[Bags (bags.fm)]] (fees attributed to the tagged X handle; the tagged creator has to "claim fees" — the beg-to-claim loop is what actually works, not the originally-promised top-100-holder dividends, which did not) |
-| Attention-miners (paid from a pre-mined pool for producing or consuming attention) | [[10K.world]] (watch-to-earn), [[CTA.fun]] (reply-to-earn — pre-mined $CTA on Solana; tagging triggers a contest, most-liked reply earns the payout) |
-| Liquidity-providers baked in | [[Zora]] (1% of 3% fee) |
-| Community gated by holding | [[$ALEX token]] (whale-exclusive Telegram group chat gated on $ALEX holdings), [[friend.tech]] keys |
+| Creator launches and earns | [[pump.fun]], [[Believe (believe.app)]], [[Rodeo]], [[mint.fun]], [[$ALEX token]], [[friend.tech]], [[Drakula (drakula.app)]], [[Giggles]], [[Frenzy (frenzy.fun)]] |
+| Referrer earns | [[Rodeo]] (25% cut on feed-driven mints — the feed _is_ the referral), [[mint.fun]] (indirectly, via the **Boost** ecosystem — creators pay to get ranked higher) |
+| Creator earns without consent, must claim | [[BitClout]] (2021 — pre-populated creator coins for the top 15k Twitter accounts; the person had to claim to collect), [[Bags (bags.fm)]] (2026 — fees attributed to the tagged X handle; the beg-to-claim loop is what actually works, not the originally-promised top-100-holder dividends) |
+| Consumers earn | [[10K.world]] (watch-to-earn), [[CTA.fun]] (reply-to-earn — pre-mined $CTA on Solana; most-liked reply wins) |
+| LP earns | [[Zora]] (1% of 3% fee) |
 
 ### 3. Liquidity structure — how is the market made?
 
 | Structure | Examples |
 |---|---|
-| Bonding curves | [[friend.tech]], [[pump.fun]], [[Believe (believe.app)]], [[BitClout]], [[Giggles]], [[Frenzy (frenzy.fun)]] (wraps [[pump.fun]] memecoins on Solana — curated UI layer, same underlying curve) |
-| AMM pools (Uniswap / Meteora / Raydium) | [[Zora]], [[rug.fun]] graduation |
+| Bonding curves + AMM | [[friend.tech]], [[pump.fun]], [[Believe (believe.app)]], [[BitClout]], [[Giggles]], [[Frenzy (frenzy.fun)]] (wraps [[pump.fun]] memecoins on Solana — curated UI layer, same underlying curve), [[Scoop]] (Farcaster creator profiles on a bonding curve), [[Zora]], [[rug.fun]]. **Chain and venue differ but the mechanism is the same class** — a mathematical curve prices the asset. |
 | NFT mints (ERC-1155, one-at-a-time) | [[Rodeo]], [[mint.fun]] |
 | Coin-trend wrapping underlying assets | [[meme.market]] (NFTs bundled under a coin "trend"), [[Zora]] trends |
 | Fixed supply with drip emission | [[2100]] (2100/account), [[$ALEX token]] |
@@ -64,12 +62,12 @@ Most apps pay the launcher/creator in some form — the rows below capture the _
 
 | Strategy | Examples |
 |---|---|
-| Invite codes with scarcity | [[friend.tech]], [[Breakout v1]] |
 | Pre-populate accounts for famous targets (without consent) | [[BitClout]] top 15k, [[Bags (bags.fm)]] Twitter handles |
-| X/Twitter mention as launch surface | [[Believe (believe.app)]] (launcher tweets), [[Bags (bags.fm)]] (anyone tweets), [[CTA.fun]] (anyone tags a post/thread on X to trigger a $CTA bounty contest), [[Zora]] (creators post on X) |
-| Closed demographic gate | [[Breakout v1]] (college students) |
+| X / CT as launch surface | [[Believe (believe.app)]] (launcher tweets _is_ the launch), [[Bags (bags.fm)]] (anyone tweets-to-launch), [[CTA.fun]] (tag a post/thread to trigger a $CTA bounty contest), [[Zora]] (creators post coins on X), [[friend.tech]] (CT invite-code drops + key-price tweets), [[BitClout]] (pre-populated top-15k Twitter accounts; launched on CT), [[$ALEX token]] (launched through CT announcements and discussion). Covers both mention-mechanic launches and apps that used X / crypto-Twitter as their primary discovery surface. |
 | Self-launch (founder tokenizes themselves) | [[$ALEX token]] |
-| Ride an existing social graph | [[Drakula (drakula.app)]] on [[Farcaster]], [[Giggles]] on TikTok (GTM + content source), [[Frenzy (frenzy.fun)]] on TikTok (GTM + trend source). **Emerging pattern:** TikTok is increasingly the GTM surface for crypto-consumer apps in 2026, where X was dominant in 2024–2025. |
+| Ride [[Farcaster]] | [[Drakula (drakula.app)]] (video + DEGEN-curve), [[Scoop]] (bonding-curve trading of Farcaster creator profiles — similar to Drakula but with no video; creator profiles were the content unit. Made by the same team that later shipped [[Frenzy (frenzy.fun)]]) |
+| Ride TikTok | [[Giggles]] (GTM + content source), [[Frenzy (frenzy.fun)]] (GTM + trend source). **Emerging pattern:** TikTok is increasingly the GTM surface for crypto-consumer apps in 2026, where X was dominant in 2024–2025. |
+| Invite codes with scarcity | [[friend.tech]], [[Breakout v1]], [[Foundation (NFT marketplace)]] (invites were for early creators) |
 
 ### 5. Content surface — what's the unit of content?
 
@@ -78,18 +76,19 @@ Most apps pay the launcher/creator in some form — the rows below capture the _
 | Text | [[Farcaster]] casts |
 | Video | [[Drakula (drakula.app)]], [[10K.world]], [[Giggles]] |
 | NFT art / mint | [[Showtime (tryshowtime.com)]], [[Rodeo]], [[Zora]] app, [[Context (social feed)]] (social feed of NFTs) |
-| Trend signals | [[Frenzy (frenzy.fun)]], [[Giggles]], [[meme.market]] (NFTs bundled under coin trends) |
+| Trend signals | [[Frenzy (frenzy.fun)]], [[Giggles]], [[meme.market]] (NFTs bundled under coin trends), [[Zora]] trends |
 | Outcomes / predictions | [[context.markets]], [[Breakout v2]], [[Believe v2]] (sentiment / popularity trajectories of named individuals — "outcome-less" prediction markets) |
 | Meme (coin-as-meme, detachable from identity even if tagged to a handle) | [[pump.fun]], [[Believe (believe.app)]], [[Bags (bags.fm)]] |
-| Identity itself | [[BitClout]], [[friend.tech]], [[$ALEX token]] |
+| Identity itself | [[BitClout]], [[friend.tech]], [[$ALEX token]], [[Scoop]] (Farcaster creator profiles) |
 | Trader actions / portfolios | [[Fomo (fomo.family)]] |
 
 ### 6. User action — what do users actually DO?
 
 | Action | Examples |
 |---|---|
-| Trade | [[pump.fun]], [[Believe (believe.app)]], [[Bags (bags.fm)]], [[Giggles]], [[Frenzy (frenzy.fun)]] |
-| Collect | [[Rodeo]], [[Zora]] (as viewer), [[Showtime (tryshowtime.com)]] |
+| Trade creators | [[Believe (believe.app)]], [[$ALEX token]], [[Drakula (drakula.app)]], [[Scoop]] |
+| Trade memes | [[pump.fun]], [[Bags (bags.fm)]], [[Frenzy (frenzy.fun)]], [[Giggles]] |
+| Collect | [[Rodeo]], [[Zora]] (pre-coins era — gallery / collection UX), [[Showtime (tryshowtime.com)]] |
 | Speculate on someone else's attention | [[Breakout v2]], [[Believe v2]] |
 | Follow / copy traders | [[Fomo (fomo.family)]] |
 | Post (and pay for the privilege) | [[Captcha (captcha.social)]] (buyback-to-post) |
@@ -113,7 +112,7 @@ Most apps pay the launcher/creator in some form — the rows below capture the _
 - **[[friend.tech]]** (August 2023): bonding-curve keys + invite codes + Base L2. Hit $50M TVL early. **Proved the mechanic to normies** and made Base a consumer chain. Died by mid-2024 — reflexivity without retention.
 
 ### 2024 — Solana launchpad era begins + aggregation consolidation
-- **[[pump.fun]]** (Jan 2024): Solana memecoins, x·y=k curve, **$69k graduation → Raydium** (the move that **ended the pure-bonding-curve era**). Combined with an incredible brand, instantly-understandable UI, and trivially-easy create-a-coin UX, this made it the most revenue-generative crypto protocol of 2024.
+- **[[pump.fun]]** (Jan 2024): Solana memecoins, x·y=k curve, originally **$69k graduation → Raydium** (the move that **ended the pure-bonding-curve era**; pump.fun has since moved off the Raydium graduation). Combined with an incredible brand, instantly-understandable UI, and trivially-easy create-a-coin UX, it became the most revenue-generative crypto protocol of 2024.
 - **[[mint.fun]]** acquired by [[Zora]] — discovery layer folds into upstream protocol.
 - **[[Rodeo]]** (2024): Base NFT mints, 50/25/25 split (creator / influencer / platform), curator-driven feed. The **closed-loop flywheel**: most items in a user's feed came _from referrers_, so any purchase from the feed fed value back to the curator who surfaced it — curators were incentivized to keep surfacing, buyers were constantly buying curator-surfaced items, creators got paid via the base split. The failure mode was the **transaction model**: every mint was a sub-$1 microtransaction, which is the worst-of-both-worlds between Farcaster-style free tapping (too much friction to compete) and Solana-style variable-amount coin buys (not enough volume to compete on speculation).
 - **[[Drakula (drakula.app)]]** (author's app #2, **2024**): video + DEGEN-denominated bonding curve on Farcaster. Curve reflexively peaked then collapsed; the Farcaster ecosystem faded in the same window.
@@ -153,11 +152,11 @@ Late 2025 through early 2026 is a **category-level inflection** in consumer-cryp
 
 ## What worked (at least in a window)
 
-1. **pump.fun — brand + UX + graduation** — four compounding factors, not just a clever curve: (1) **incredible brand** that became synonymous with the category; (2) **instantly-understandable UI** — a first-time user grasps what the app does and why to use it within seconds; (3) **trivially easy "create a coin" UX** that collapsed the onboarding friction memecoin launching used to carry; (4) **pioneered the $69k graduation** from bonding curve → Raydium AMM, which **ended the pure-bonding-curve era** — no serious launchpad after pump.fun tried to survive on a curve alone (compare friend.tech, BitClout). Combined with Solana's speed + low fees, this made pump.fun the most revenue-generative crypto protocol of 2024.
+1. **pump.fun — brand + UX + graduation** — four compounding factors, not just a clever curve: (1) **incredible brand** that became synonymous with the category; (2) **instantly-understandable UI** — a first-time user grasps what the app does and why to use it within seconds; (3) **trivially easy "create a coin" UX** that collapsed the onboarding friction memecoin launching used to carry; (4) **pioneered the $69k graduation** from bonding curve to an external AMM (originally Raydium), which **ended the pure-bonding-curve era** — no serious launchpad after pump.fun tried to survive on a curve alone (compare friend.tech, BitClout). pump.fun has since moved off the Raydium graduation, but the precedent held. Combined with Solana's speed + low fees, this made pump.fun the most revenue-generative crypto protocol of 2024.
 2. **friend.tech's bonding curve + invite code scarcity + Base L2** — peaked hard; the **mechanic proof** is what worked, not the business.
 3. **Zora's three-coin flywheel in an Instagram-like mobile app** — content coins ↔ creator coins ↔ ZORA, compounding inside a consumer-app UX, with X as the out-of-app discovery surface. This — not the Base App wallet integration (which shipped July 2025, was later shut down, and did not help) — drove Q2 2025's $353M. Reflexivity has since faded.
 4. **Believe's X-mention as launch surface** — collapsed two steps (launch somewhere + promote on X) into one tweet.
-5. **mint.fun's aggregation UX** — the only clean commercial exit in [[Context (the team/company)]]'s arc. Acquirer bought the user base + the discovery layer, not the tech.
+5. **mint.fun's aggregation UX** — the only clean commercial exit in [[Context (the team/company)]]'s arc. [[Zora]] acquired it for the **tech**: mint.fun was generating meaningful referral fees into Zora, and owning the aggregator directly was more valuable than paying it out.
 6. **Farcaster as protocol** — 250k MAU and a Neynar acquisition in Jan 2026 (the widely-cited ~$1B figure was not the actual deal price). Protocol-level thinking did survive the app-level noise in the sense that there's still a Farcaster to acquire, but the acquisition itself has flopped post-close — no consumer acceleration, stalled momentum. Credit the protocol primitive, not the deal outcome.
 7. **$ALEX as prototype, not as retention proof** — the 2020 handmade experiment previewed almost every SocialFi mechanic later platformized (personal token, ISA, community-gating on holdings, whale-exclusive Telegram). The contract is still on mainnet, but the project is **dormant**; volume only spikes around the author's new launches. The value here is archaeological — it showed what would work at platform scale — not that a personal-token-around-one-human retains over years.
 8. **Rodeo's closed-loop referral economy** — the 25% referrer cut wasn't just a kickback; it was structural. The feed was curator-surfaced, so most buys on the feed routed value back to the person who put the item there. Curators kept curating because every feed-driven sale paid them, creating a genuine closed-loop economy (curators → feed → buyers → curators). Limiting factor below — but this is the cleanest operationalization of the curator-economy thesis in the wiki.
@@ -192,7 +191,7 @@ Late 2025 through early 2026 is a **category-level inflection** in consumer-cryp
 
 ## The 13 lessons (current best read)
 
-**L1. Bonding curves alone don't retain users — pump.fun ended the pure-curve era by adding graduation.** Every _pure_-curve app peaked hard and collapsed (friend.tech, BitClout). Curves drive speculation; they don't create stickiness on their own. pump.fun was the inflection: the **$69k graduation to Raydium** gave coins a post-curve life (real AMM, continued discovery), and the four compounding factors — brand, instantly-understandable UI, trivial create-a-coin UX, and graduation — made it the category's revenue machine. No serious launchpad after pump.fun has tried to survive on a pure curve. The apps that persist all pair curves with something else (Zora: + three-tier liquidity flywheel wrapped in a consumer mobile app; Bags: + identity-claim coercion; Frenzy: + TikTok-native curation over pump.fun itself). Even those eventually face reflexivity fade — Zora's reflexivity has now faded, Captcha's has too.
+**L1. Bonding curves alone are too speculative; graduation helps assets last longer.** Every _pure_-curve app peaked hard and collapsed (friend.tech, BitClout). A bonding curve is a pure speculation instrument — price goes up as more buyers enter, goes down as they exit, and that's the entire loop. Without a post-curve life, the asset has no reason to exist once the reflex cools. pump.fun was the inflection: the **$69k graduation from curve to AMM** (originally Raydium) gave coins continued trading life after the curve — graduated assets could keep moving for months instead of dying within hours. No serious launchpad after pump.fun has tried to survive on a pure curve. The apps that persist all pair curves with something else that outlasts the speculation: graduation (pump.fun), a three-tier liquidity flywheel wrapped in a consumer mobile app (Zora), identity-claim coercion (Bags), TikTok-native curation over pump.fun itself (Frenzy). Even those eventually face reflexivity fade — Zora's reflexivity has now faded, Captcha's has too.
 
 **L2. Chain-native UX is mandatory; bridges are fatal.** BitClout's own-chain forced BTC→CLOUT bridges and added friction. friend.tech launched on Base, eliminated that friction, broke out. Any launchpad today that requires a bridge loses to one that doesn't.
 
